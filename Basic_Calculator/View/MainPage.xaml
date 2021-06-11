@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Basic_Calculator.MainPage"
+             BackgroundColor="Teal">
+
+    <StackLayout>
+        <Frame CornerRadius="15" BorderColor="Aquamarine"
+               Margin="40,70,50,20"
+               HeightRequest="70" Padding="0.2">
+            <Label BackgroundColor="Black" Opacity=".7"
+               Padding="10"
+               HeightRequest="60"
+               Text="Hello" TextColor="LimeGreen"
+               FontSize="42"
+               VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+        </Frame>
+
+        <Grid RowDefinitions="55,55,55,55,55" ColumnDefinitions="65,65,65,65"
+              Margin="25,40,20,20" ColumnSpacing="12" RowSpacing="17"
+              HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+            <Button Grid.Row="4"
+                    Text="0"
+                    CornerRadius="25"
+                    Command="btn_Zero"/>
+            <Button Grid.Row="4" Grid.Column="1"
+                    Text="00"
+                    CornerRadius="25"
+                    Command="btn_dblZero"/>
+            <Button Grid.Row="4" Grid.Column="2"
+                    Text=","
+                    CornerRadius="25"
+                    Command="btn_Comma"/>
+            <Button Grid.Row="4" Grid.Column="3"
+                    Text="=" FontSize="25" FontAttributes="Bold"
+                    CornerRadius="25"
+                    Command="btn_Equal"/>
+
+            <Button Grid.Row="3"
+                    Text="1"
+                    CornerRadius="25"
+                    Command="btn_One"/>
+            <Button Grid.Row="3" Grid.Column="1"
+                    Text="2"
+                    CornerRadius="25"
+                    Command="btn_Two"/>
+            <Button Grid.Row="3" Grid.Column="2"
+                    Text="3"
+                    CornerRadius="25"
+                    Command="btn_Three"/>
+            <Button Grid.Row="3" Grid.Column="3"
+                    Text="+" FontSize="25" FontAttributes="Bold"
+                    CornerRadius="25"
+                    Command="btn_Add"/>
+
+            <Button Grid.Row="2"
+                    Text="4"
+                    CornerRadius="25"
+                    Command="btn_4"/>
+            <Button Grid.Row="2" Grid.Column="1"
+                    Text="5"
+                    CornerRadius="25"
+                    Command="btn_5"/>
+            <Button Grid.Row="2" Grid.Column="2"
+                    Text="6"
+                    CornerRadius="25"
+                    Command="btn_6"/>
+            <Button Grid.Row="2" Grid.Column="3"
+                    Text="-" FontSize="25" FontAttributes="Bold"
+                    CornerRadius="25"
+                    Command="Subtract"/>
+
+            <Button Grid.Row="1"
+                    Text="7"
+                    CornerRadius="25"
+                    Command="btn_Seven"/>
+            <Button Grid.Row="1" Grid.Column="1"
+                    Text="8"
+                    CornerRadius="25"
+                    Command="btn_Eight"/>
+            <Button Grid.Row="1" Grid.Column="2"
+                    Text="9"
+                    CornerRadius="25"
+                    Command="btn_Nine"/>
+            <Button Grid.Row="1" Grid.Column="3"
+                    Text="×" FontSize="25" FontAttributes="Bold"
+                    CornerRadius="25"
+                    Command="btn_Multiply"/>
+
+            <Button Grid.Row="0"
+                    Text="CE" FontSize="20" FontAttributes="Bold"
+                    CornerRadius="25"
+                    BackgroundColor="HotPink" BorderColor="Fuchsia" 
+                    Command="btn_Clear"/>
+            <Button Grid.Row="0" Grid.Column="1"
+                    Text="→" FontSize="30" FontAttributes="Bold"
+                    Padding="-20"
+                    CornerRadius="25"
+                    Command="btn_Erase"/>
+            <Button Grid.Row="0" Grid.Column="2"
+                    Text="%" FontSize="25" FontAttributes="Bold"
+                    CornerRadius="25"
+                    Command="btn_Percentage"/>
+            <Button Grid.Row="0" Grid.Column="3"
+                    Text="÷" FontSize="25" FontAttributes="Bold"
+                    CornerRadius="25"
+                    Command="btn_Divide"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
